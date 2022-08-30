@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/service/service",
+    "pages/characteristic/characteristic",
+    "pages/com/com"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1E88E5",
+    "navigationBarTitleText": "BLE蓝牙助手",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 0
+  },
+  "sitemapLocation": "sitemap.json"
+}

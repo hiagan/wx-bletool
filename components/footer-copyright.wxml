@@ -1,0 +1,9 @@
+<!--components/footer-copyright.wxml-->
+<view class="footer-fix">
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <navigator class="weui-footer__link weui-wa-hotarea" url="javascript:">BLE蓝牙助手</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2022-2025 hiagan</view>
+  </view>
+</view>

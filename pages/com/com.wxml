@@ -1,0 +1,72 @@
+<!--pages/com/com.wxml-->
+<view class="com-container">
+  <view class="com-header">
+    <!-- <image src="/images/bluetooth.png" class="bluetooth"></image> -->
+    <view class="name">接收数据RX {{receiverLength}}</view>
+  </view>
+
+  <scroll-view scroll-y="true" class="com-receiver">
+   <text user-select="true">{{receiverText.length <=0 ? '正在等待数据……' : receiverText}}
+  </text>
+  </scroll-view>
+
+  <button class="button-clear" bindtap="clearReceiverText">清除接收的数据</button>
+
+  <view class="com-header">
+    <!-- <image src="/images/bluetooth.png" class="bluetooth"></image> -->
+    <view class="name">发送数据TX {{sendLength}}</view>
+  </view>
+  
+  <view class="com-send">
+    <textarea bindblur="bindTextAreaBlur" cursor-spacing="140" auto-height value="{{sendText}}" maxlength="1024" bindblur="updateSendText" placeholder="请输入要发送的数据" />
+    
+  </view>
+  <button class="button-send" bindtap="manualSend">发送</button>
+  
+  
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="empty_tip " >
+
+<view class="receiver_container">{{receiverText}}</view>
+
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row; justify-content:space-between;">
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="flex-item bc_red">RX：<span class="num">{{receiverLength}}</span></view>
+      <view class="flex-item bc_green">TX: <span class="num">{{sendLength}}</span></view>
+    </view>
+    <view style="float: right;"><button type="button" bindtap="clearReceiverText" >清除</button></view>
+  </view>
+</view>
+
+<view class="send_container">
+  <textarea style="width: 100%;height: 100%;background: #F0F0F0;" auto-focus="true" cursor-spacing="100" value="{{sendText}}" maxlength="1024" bindblur="updateSendText" placeholder="输入发送数据..." placeholder-class="placeholder"/>
+</view>
+
+<view class="group">
+  <view class="ops">
+    <view class="ops_label">定时发送：</view>
+    <view class="ops_content">
+      <checkbox-group bindchange="timeChange">
+        <checkbox value="true"/>
+      </checkbox-group>
+      <input value="{{time}}" bindblur="updateTime" />ms
+    </view>
+  </view>
+  <button type="button" class="send" bindtap="manualSend">发送</button>
+</view>
+</view> -->

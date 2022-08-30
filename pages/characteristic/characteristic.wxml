@@ -1,0 +1,55 @@
+<!--pages/characteristic-ble/characteristic-ble.wxml-->
+<view class="characteristic-container">
+  <view class="characteristic-header">
+    
+    <view class="name">{{name}} Characteristics</view>
+  </view>
+  <view wx:for="{{characteristic}}" class="characteristic-item" data-characteristicId="{{item.uuid}}" data-properties="{{item.properties}}" bindtap="operation">
+    <view class="item-left">
+      <view class="title">
+        {{item.properties.read ? ' Read' : ''}}
+      {{item.properties.write ? ' Write' : ''}}
+      {{item.properties.notify ? ' Notify' : ''}}
+      {{item.properties.indicate ? ' Indicate' : ''}}
+      
+      </view>
+      <view class="sub">UUID:{{item.uuid}}</view>
+    </view>
+    <image src="/images/more.png" class="item-right">
+    </image>
+    
+  </view>
+</view>
+<footer-copyright></footer-copyright>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<view class="label">
+  <p>蓝牙设备名称：<b class="name">{{name}}</b></p>
+  <div class="type">特征值 UUID</div>
+</view>
+<view wx:for="{{characteristic}}" class="characteristic-item" data-characteristicId="{{item.uuid}}" data-properties="{{item.properties}}" bindtap="operation">
+  <view class="uuid">UUID：<span class="content">{{item.uuid}}</span></view>
+  <view class="sub">
+    properties: 
+    <span class="content">
+      {{item.properties.read ? ' Read' : ''}}
+      {{item.properties.write ? ' Write' : ''}}
+      {{item.properties.notify ? ' Notify' : ''}}
+      {{item.properties.indicate ? ' Indicate' : ''}}
+    </span>
+  </view>
+</view>

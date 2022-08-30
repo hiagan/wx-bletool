@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "footer-copyright": "/components/footer-copyright"
+  },
+  "backgroundColor": "#EEE",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

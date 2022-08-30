@@ -1,0 +1,11 @@
+/* components/footer-copyright.wxss */
+@import "/weui.wxss";
+.footer-fix {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  bottom: 1%;
+  
+  transform: translate(-50%, 0%);
+
+}

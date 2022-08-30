@@ -1,0 +1,90 @@
+/* pages/search-dev/search-dev.wxss */
+
+
+
+page {
+  height: 100%;
+
+}
+
+.search-container {
+  background-color: #F8F8F8;
+  height: 100%;
+  
+
+  
+}
+
+
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 400rpx;
+}
+
+.search-header .bluetooth {
+  width: 192rpx;
+  height: 192rpx;
+}
+
+.search-header .name {
+  margin-top: 32rpx;
+  font-size: 32rpx;
+
+}
+.search-items {
+  
+  height: 700rpx;
+  
+}
+.search-item {
+  margin: 32rpx;
+  padding: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #EEE;
+  height: auto;
+
+}
+
+.search-item .icon {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+
+}
+
+.search-item .item-left {
+  max-width: 83%;
+  color: #181818;
+}
+.search-item .item-right {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-left: auto;
+}
+.search-item .title {
+  
+  overflow-wrap: break-word;
+  font-size: 30rpx;
+  font-weight: bold;
+  
+}
+
+.search-item .sub {
+  margin-top: 16rpx;
+  font-size: 24rpx;
+  color: #7b7b7b;
+  
+  overflow-wrap: break-word;
+
+}
+
+
+

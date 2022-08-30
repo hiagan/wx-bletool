@@ -1,0 +1,73 @@
+/* pages/service-ble/service-ble.wxss */
+page {
+  height: 100%;
+  background-color: #F8F8F8;
+}
+.service-container {
+  height: 100%;
+}
+.service-header {
+  display:flex;
+  
+  flex-direction:column;
+  margin:  64rpx auto 64rpx 32rpx;
+  
+}
+
+.service-header .bluetooth {
+  width: 192rpx;
+  height: 192rpx;
+}
+.service-header .name {
+  width: max-content;
+  font-size: 44rpx;
+  border-bottom: 1px solid #1E88E5;
+  padding-bottom: 16rpx;
+  justify-content: flex-end;
+
+}
+
+.service-item {
+  margin: 32rpx;
+  padding: 32rpx;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #EEE;
+  height: 120rpx;
+  
+}
+.service-item .icon {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+
+}
+.service-item .item-left {
+  max-width: 83%;
+  color:#181818;
+}
+.service-item .title {
+  
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.service-item .sub {
+  margin-top: 16rpx;
+  font-size: 24rpx;
+  color: #7b7b7b;
+  overflow-wrap: break-word;
+  
+}
+
+.service-item .item-right {
+  
+  width: 72rpx;
+  height:72rpx;
+  border-radius: 50%;
+  margin-left: auto;
+  
+  
+}

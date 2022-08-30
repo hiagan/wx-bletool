@@ -1,0 +1,41 @@
+<!--pages/search-dev/search-dev.wxml-->
+<view class="search-container">
+  <view class="search-header">
+    <image src="/images/bluetooth.png" class="bluetooth"></image>
+    <text class="name">已发现{{devs.length}}个BLE设备 </text>
+  </view>
+  <scroll-view class="search-items" scroll-y scroll-with-animation>
+
+    <view class="search-item"  bindtap="connect">
+      <view class="item-left">
+        <view class="title">AB23AB23AB23AB23AB23AB</view>
+        <view class="sub">信号强度:-56dBm（%）</view>
+        <view class="sub">UUID: 12343333321123421</view>
+      </view>
+      <image src="/images/more.png" class="item-right">
+      </image>
+    </view>
+
+    
+
+
+
+
+    <view class="search-item" wx:for="{{devs}}" wx:key="index" data-dev="{{item}}" data-device-id="{{item.deviceId}}" data-name="{{item.name || item.localName}}" bindtap="connect">
+
+      <view class="item-left">
+        <view class="title"> {{item.name || 'N/A'}}</view>
+        <view class="sub">信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</view>
+        <view class="sub">UUID: {{item.deviceId}}</view>
+      </view>
+      <image src="/images/more.png" class="item-right">
+      </image>
+
+    </view>
+  </scroll-view>
+  <view>
+    <footer-copyright></footer-copyright>
+  </view>
+  
+
+</view>

@@ -1,0 +1,34 @@
+<!--pages/service-ble/service-ble.wxml-->
+<view class="service-container">
+
+
+
+
+
+<view class="service-header">
+  <!-- <image src="/images/bluetooth.png" class="bluetooth"></image> -->
+  <view class="name">{{name}} Services</view>
+</view>
+
+<!-- <view class="service-item" data-uuid="e4344432" bindtap="getCharacteristic">
+  <view class="uuid">
+    <view class="title">Primary Service</view>
+    <view class="sub">UUID:345ERRR33RRER334FEQwwwwwwewwww</view>
+  </view>
+  <image src="/images/more.png" class="more">
+  </image>
+</view> -->
+
+
+<view wx:for="{{services}}" class="service-item" data-uuid="{{item.uuid}}" bindtap="getCharacteristic">
+  <view class="item-left">
+    <view class="title">{{item.isPrimary ? 'Primary Service' : 'Secondary Service'}}</view>
+    <view class="sub">UUID：{{item.uuid}}</view>
+  </view>
+  <image src="/images/more.png" class="item-right">
+  </image>
+
+</view>
+
+</view>
+<footer-copyright></footer-copyright>

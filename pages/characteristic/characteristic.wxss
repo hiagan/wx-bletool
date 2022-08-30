@@ -1,0 +1,73 @@
+page {
+  height: 100%;
+  background-color: #F8F8F8;
+}
+.characteristic-container {
+  
+  height: 100%;
+}
+.characteristic-header {
+  display:flex;
+  
+  flex-direction:column;
+  margin:  64rpx auto 64rpx 32rpx;
+}
+
+.characteristic-header .bluetooth {
+  width: 192rpx;
+  height: 192rpx;
+}
+.characteristic-header .name {
+  width: max-content;
+  font-size: 44rpx;
+  border-bottom: 1px solid #1E88E5;
+  padding-bottom: 16rpx;
+  justify-content: flex-end;
+
+}
+.characteristic-item {
+  margin: 32rpx;
+  padding: 32rpx;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #EEE;
+  height: 120rpx;
+  
+}
+.characteristic-item .icon {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+
+}
+.characteristic-item .item-left {
+  max-width: 83%;
+  color:#181818;
+}
+.characteristic-item .title {
+  
+  overflow-wrap: break-word;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.characteristic-item .sub {
+  margin-top: 16rpx;
+  font-size: 24rpx;
+  color: #7b7b7b;
+ 
+  overflow-wrap: break-word;
+  
+}
+
+.characteristic-item .item-right {
+  
+  width: 72rpx;
+  height:72rpx;
+  border-radius: 50%;
+  margin-left: auto;
+  
+  
+}
