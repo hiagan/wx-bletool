@@ -39,5 +39,14 @@
 
 ![小程序接收数据](./images/readme-6.jpg)
 
+## 需要你的支持
 
+如果对你有用请打赏支持
 
+![打赏支持](./images/readme-reward.jpg)
+
+## 技术咨询
+
+技术咨询请联系
+
+![技术咨询](./images/readme-contact.jpg)
